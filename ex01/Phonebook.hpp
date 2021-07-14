@@ -6,7 +6,7 @@
 /*   By: tmatis <tmatis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/14 19:22:04 by tmatis            #+#    #+#             */
-/*   Updated: 2021/07/14 19:34:36 by tmatis           ###   ########.fr       */
+/*   Updated: 2021/07/14 21:50:50 by tmatis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class Phonebook
 				Phonebook(void);
 				~Phonebook();
 		void	add_contact(void);
+		void	display_contact(int index);
+		void	list_contact(void);
 };
 
 #endif

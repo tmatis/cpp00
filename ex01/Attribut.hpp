@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   attribut.hpp                                       :+:      :+:    :+:   */
+/*   Attribut.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmatis <tmatis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/14 18:39:40 by tmatis            #+#    #+#             */
-/*   Updated: 2021/07/14 19:14:17 by tmatis           ###   ########.fr       */
+/*   Updated: 2021/07/14 21:47:47 by tmatis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ class Attribut
 					Attribut(void);
 					~Attribut();
 		void		form_value(std::string name);
+		void		display(void);
 		std::string	get_value(void) const;
-		std::string	get_name(void) const;
 	};
 
 
