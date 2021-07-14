@@ -6,7 +6,7 @@
 #    By: tmatis <tmatis@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/14 10:00:31 by tmatis            #+#    #+#              #
-#    Updated: 2021/07/14 12:57:02 by tmatis           ###   ########.fr        #
+#    Updated: 2021/07/14 19:30:26 by tmatis           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ SRCS_PATH		= ./
 
 INCLUDE_PATH	= ./
 
-SRCS		= attribut.class.cpp contact.class.cpp
+SRCS		= Attribut.cpp Contact.cpp Phonebook.cpp
 MAIN		= main.cpp
 
 ################################################################################

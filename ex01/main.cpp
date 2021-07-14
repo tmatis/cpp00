@@ -6,14 +6,25 @@
 /*   By: tmatis <tmatis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/14 10:04:05 by tmatis            #+#    #+#             */
-/*   Updated: 2021/07/14 13:04:02 by tmatis           ###   ########.fr       */
+/*   Updated: 2021/07/14 19:38:31 by tmatis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "contact.class.hpp"
+
+#include "Phonebook.hpp"
 
 int	main(void)
 {
-	Contact contact;
+	Phonebook	Phonebook;
+
+	Phonebook.add_contact();
+	Phonebook.add_contact();
+	Phonebook.add_contact();
+	Phonebook.add_contact();
+	Phonebook.add_contact();
+	Phonebook.add_contact();
+	Phonebook.add_contact();
+	Phonebook.add_contact();
+	Phonebook.add_contact();
 }

@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   contact.class.hpp                                  :+:      :+:    :+:   */
+/*   Phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmatis <tmatis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/14 12:21:48 by tmatis            #+#    #+#             */
-/*   Updated: 2021/07/14 12:48:44 by tmatis           ###   ########.fr       */
+/*   Created: 2021/07/14 19:22:04 by tmatis            #+#    #+#             */
+/*   Updated: 2021/07/14 19:34:36 by tmatis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_CLASS_HPP
+#ifndef PHONEBOOK_HPP
 
-# define CONTACT_CLASS_HPP
+# define PHONEBOOK_HPP
 
-# include "attribut.class.hpp"
+# include "Contact.hpp"
 
-class	Contact
-{	
+# define CONTACT_MAX 8
+
+class Phonebook
+{
 	private:
-		Attribut	_first_name;
-		Attribut	_last_name;
-		Attribut	_nickname;
-		Attribut	_phone_number;
-		Attribut	_darkest_secret;
+		Contact	_contact_array[CONTACT_MAX];
+		int		_contact_count;
 	public:
-		Contact(void);
+				Phonebook(void);
+				~Phonebook();
+		void	add_contact(void);
 };
 
 #endif
