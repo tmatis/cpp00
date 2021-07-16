@@ -6,7 +6,7 @@
 /*   By: tmatis <tmatis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/14 19:27:12 by tmatis            #+#    #+#             */
-/*   Updated: 2021/07/14 22:01:03 by tmatis           ###   ########.fr       */
+/*   Updated: 2021/07/16 11:33:21 by tmatis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,13 @@ void	print_box(std::string field, bool print_colum)
 	if (print_colum)
 		std::cout << '|';
 	if (field.size() > 10)
-		std::cout << std::setw(9) << std::right << std::setfill('.') << field;
+	{
+		std::cout << std::setw(10) << std::left << std::setfill('.')
+			<< field.substr(0, 9);
+	}
 	else
-		std::cout << std::setw(10) << std::right << std::setfill(' ') << field;
+		std::cout << std::setw(10) << std::right << std::setfill(' ')
+			<< field;
 	std::cout << '|';
 }
 
